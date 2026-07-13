@@ -378,6 +378,10 @@ footer{background:#0f1f0f;color:#fff;margin-top:80px}
 
   .contact-grid{grid-template-columns:1fr;gap:32px}
 
+  /* Ensure homepage pillars stack on mobile and avoid horizontal overflow */
+  .page#page-home .pillars-grid{grid-template-columns:1fr;gap:20px}
+  .page#page-home .pillars-grid .pillar-card{max-width:none;padding:20px;border-radius:16px}
+
   .gallery-strip{grid-template-columns:repeat(2,1fr)}
   .footer-inner{grid-template-columns:1fr 1fr;gap:24px}
 }
@@ -416,4 +420,11 @@ footer{background:#0f1f0f;color:#fff;margin-top:80px}
   .btn{padding:10px 20px;font-size:13px}
   .dark-band-imgs{grid-template-columns:1fr}
   .dark-band-imgs img:first-child{height:160px}
+
+  /* Tighten pillars and gallery on smallest screens */
+  .page#page-home .pillars-grid{grid-template-columns:1fr;gap:16px}
+  .page#page-home .pillars-grid .pillar-card{border-radius:12px;padding:16px}
+  .gallery-strip{grid-template-columns:1fr}
+  .gallery-strip img{height:180px}
+  .container{padding:0 12px}
 }
