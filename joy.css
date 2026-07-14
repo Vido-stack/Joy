@@ -94,8 +94,8 @@ nav{position:sticky;top:0;z-index:200;background:#000;backdrop-filter:blur(12px)
 .page#page-home .pillars-grid,
 .page#page-home .gallery-strip img{color:#fff}
 .page#page-home .hero-badge{background:#d9ff63;color:#111;border:none}
-.page#page-home .btn-outline{color:#fff;border-color:#fff}
-.page#page-home .btn-outline:hover{background:#fff;color:#000}
+.page#page-home .btn-outline,.page#page-home .hero-btns .btn-dark{color:#fff;border:1.5px solid #fff;background:transparent}
+.page#page-home .btn-outline:hover,.page#page-home .hero-btns .btn-dark:hover{background:#fff;color:#000}
 .page#page-home .hero-btns .btn-dark{background:#111;color:#fff}
 .page#page-home .section{background:transparent}
 .page#page-home .pillars-grid{grid-template-columns:repeat(3,1fr);}
