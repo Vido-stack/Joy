@@ -248,7 +248,8 @@ nav{position:sticky;top:0;z-index:200;background:#000;backdrop-filter:blur(12px)
 .give-num{font-family:'Fraunces',serif;font-size:26px;font-weight:600;color:var(--ink);margin:6px 0;display:block}
 
 /* ========== ABOUT ========== */
-.about-hero-section{background:var(--cream);border-bottom:1px solid var(--border);padding:60px 0}
+.about-hero-section{background:#0f1f0f;color:#fff;border-bottom:1px solid var(--border);padding:60px 0}
+.about-hero-grid p{color:rgba(255,255,255,.76)}
 .about-hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:52px;align-items:center}
 .about-hero-grid h1{font-size:42px;font-weight:600;line-height:1.1;margin:12px 0 16px}
 .about-hero-grid p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:14px}
@@ -280,14 +281,14 @@ nav{position:sticky;top:0;z-index:200;background:#000;backdrop-filter:blur(12px)
 .why-item p{font-size:13px;color:rgba(255,255,255,.7);line-height:1.65}
 
 .about-founder-section{margin-top:56px}
-.about-founder-card{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:start;background:var(--cream);border-radius:24px;padding:36px}
-.about-founder-photo{width:200px;height:240px;border-radius:18px;overflow:hidden;flex-shrink:0}
+.about-founder-card{display:grid;grid-template-columns:220px 1fr;gap:36px;align-items:center;background:linear-gradient(135deg,#8bc34a 0%,#2d5a2d 100%);border-radius:24px;padding:36px;color:#fff}
+.about-founder-photo{width:220px;height:260px;border-radius:22px;overflow:hidden;flex-shrink:0;border:4px solid rgba(255,255,255,.35);margin:0 auto}
 .about-founder-photo img{width:100%;height:100%;object-fit:cover}
-.about-founder-name{font-size:28px;font-weight:600;margin-bottom:4px}
-.about-founder-role{font-size:13px;color:var(--muted);margin-bottom:16px;display:block}
-.about-founder-bio{font-size:15px;color:var(--ink);line-height:1.8;margin-bottom:14px}
+.about-founder-name{font-size:28px;font-weight:600;margin-bottom:4px;color:#fff}
+.about-founder-role{font-size:13px;color:rgba(255,255,255,.85);margin-bottom:16px;display:block}
+.about-founder-bio{font-size:15px;color:rgba(255,255,255,.95);line-height:1.8;margin-bottom:14px}
 .about-founder-contacts{display:flex;flex-direction:column;gap:8px;margin-top:16px}
-.about-founder-contacts a{font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.about-founder-contact{font-size:14px;color:rgba(255,255,255,.95);display:flex;align-items:center;gap:8px}
 
 .cta-block{background:var(--ink);color:#fff;border-radius:24px;padding:40px;margin-top:40px;text-align:center}
 .cta-block h3{font-size:28px;font-weight:600;margin-bottom:10px}
@@ -295,8 +296,10 @@ nav{position:sticky;top:0;z-index:200;background:#000;backdrop-filter:blur(12px)
 
 /* ========== BLOG ========== */
 .blog-header{background:var(--cream);border-bottom:1px solid var(--border);padding:52px 0}
-.blog-header h1{font-size:48px;font-weight:600;margin:10px 0 14px}
-.blog-header p{font-size:16px;color:var(--muted);max-width:560px;line-height:1.75}
+.blog-header-dark{background:linear-gradient(135deg,#0f1f0f 0%,#1b351b 100%);color:#fff}
+.blog-header-dark .label{color:var(--lime)}
+.blog-header-dark h1{font-size:48px;font-weight:600;margin:10px 0 14px;color:#fff}
+.blog-header-dark p{font-size:16px;color:rgba(255,255,255,.78);max-width:560px;line-height:1.75}
 .filter-btn{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:7px 16px;border-radius:100px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:all .15s}
 .filter-btn:hover,.filter-btn.active-filter{background:var(--ink);color:#fff}
 
@@ -317,13 +320,11 @@ nav{position:sticky;top:0;z-index:200;background:#000;backdrop-filter:blur(12px)
 #new-post-form textarea{resize:vertical;min-height:130px}
 
 /* ========== CONTACT ========== */
-.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start}
-.contact-info h1{font-size:40px;font-weight:600;margin-bottom:16px}
-.contact-info p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:26px}
-.contact-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
-.contact-list li{font-size:14px;display:flex;align-items:center;gap:10px}
-.mpesa-box{background:var(--cream);border:1px solid #c6ddb0;border-radius:14px;padding:18px}
-.mpesa-num{font-family:'Fraunces',serif;font-size:24px;font-weight:600;color:var(--ink);margin:4px 0;display:block}
+.contact-shell{padding:56px 0;background:linear-gradient(135deg,#0f1f0f 0%,#1a3a1a 100%)}
+.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:start}
+.contact-info{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:32px}
+.contact-info h1{font-size:40px;font-weight:600;margin-bottom:16px;color:#fff}
+.contact-info p{font-size:15px;color:rgba(255,255,255,.76);line-height:1.75;margin-bottom:0}
 .contact-form{background:#fff;border:1px solid var(--border);border-radius:22px;padding:32px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
 .form-group{display:flex;flex-direction:column;gap:5px}
